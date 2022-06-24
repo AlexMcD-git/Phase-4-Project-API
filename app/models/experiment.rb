@@ -5,6 +5,5 @@ class Experiment < ApplicationRecord
 
     validates :user_id, presence: true
     validates :description, presence: true
-    validates :is_complete, presence: true
-    validates :is_complete, inclusion: [true, false]
+
 end
