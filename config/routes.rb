@@ -5,7 +5,17 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   Rails.application.routes.draw do
-    # route to test your configuration
-    get '/hello', to: 'application#hello_world'
+
+    resources :users, only: [:show, :create]
+    resources :chemicals, only: [:index, :create, :update, :destroy]
+    resources :chemical_experiments, only: [:create]
+    resources :experiments, only: [:create]
+
+    delete "/chemical_experiments", to: "chemical_experiments#destroy"
+    get "/users/:user_id/experiments", to: "users#experiments"
+    post "/login", to: "sessions#create"
+    post "/signup", to: "users#create"
+    get "/auth", to: "users#show"
+    delete "/logout", to: "sessions#destroy"
   end
 end
