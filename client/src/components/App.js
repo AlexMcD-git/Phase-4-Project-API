@@ -75,14 +75,7 @@ function App() {
     })))
   }
 
-  // console.log(currentUser)
-  // console.log(experiments)
 
-  // if(!currentUser) return(setCurrentUser={setCurrentUser})
-  // if(!currentUser){
-  //   console.log('im here')
-  //   navigate("/login")
-  // }
   return (
     <div className="App">
       <NavBar onLogout={onLogout} loggedIn={loggedIn}/>
