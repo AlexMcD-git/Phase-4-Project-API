@@ -1,5 +1,6 @@
 class ChemicalsController < ApplicationController
     wrap_parameters format: []
+    skip_before_action :authorized, only: :index
     def index
         chemicals = Chemical.all
         render json: chemicals, status: 200

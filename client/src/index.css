@@ -39,7 +39,22 @@ code {
 }
 
 .experimentCard {
-  border: solid black 2px
+  background-color: #FFFFFF;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+  color: navy;
+  padding: 25px 25px 25px 25px;
+  outline-style: solid;
+  outline-color: silver;
+  outline-width: 1px;
+  outline-offset: -10px;
+  text-align: center;
+}
+.experimentCard ul{
+  text-align: left;
+}
+.experimentCard ul button{
+  display:inline-flex
 }
 
 .imgWrapper {
@@ -63,7 +78,6 @@ table, th, td {
 .smallInput {
   width: 50px;
  }
-
 
 /* Login page stuff */
 .loginBody{

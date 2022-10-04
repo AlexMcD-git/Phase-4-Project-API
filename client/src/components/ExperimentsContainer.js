@@ -5,8 +5,8 @@ function ExperimentsContainer({experiments, chemicals, setExperiments, currentUs
   let initialState = {}
   if (experiments[0]){
   initialState = {
-    experiment: experiments[0].id,
-    chemical: chemicals[0].id,
+    experiment: 0,
+    chemical: 0,
 }}else{
   initialState = {
     experiment: 0,
